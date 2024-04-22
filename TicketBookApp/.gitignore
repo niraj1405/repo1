@@ -1,0 +1,5 @@
+# Ignore help file
+HELP.md
+
+# Ignore target directory
+target/
