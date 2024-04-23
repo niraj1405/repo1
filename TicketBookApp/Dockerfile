@@ -8,8 +8,8 @@ RUN mkdir -p /APP
 WORKDIR /APP
 
 # Copy the JAR file from the relative path into the container's /APP directory
-COPY TicketBookApp/target/TicketBookApp.jar /APP/
-#COPY target/TicketBookApp.jar /APP/
+#COPY TicketBookApp/target/TicketBookApp.jar /APP/
+COPY target/TicketBookApp.jar /APP/
 
 
 # Define the command to run the application
