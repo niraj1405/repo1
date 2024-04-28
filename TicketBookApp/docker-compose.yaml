@@ -15,7 +15,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: niraj1405/dockercomposevolumeimage:1.0.0-111
+    image: niraj1405/dockercomposevolumeimage:1.0.0-115
     depends_on:
       - mysql-db-1
     ports:
