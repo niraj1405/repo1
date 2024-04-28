@@ -1,5 +1,5 @@
 # Use OpenJDK 17 as the base image
-FROM openjdk:latest
+FROM openjdk:17
 
 # Create the directory /APP
 RUN mkdir -p /APP
