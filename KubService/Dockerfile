@@ -8,7 +8,7 @@ RUN mkdir -p /APP
 WORKDIR /APP
 
 # Copy the WebApp.jar file from the target directory into the container's /APP directory
-COPY target/YmlKubApp.jar /APP/
+COPY KubService/target/YmlKubApp.jar /APP/
 # Define the command to run the application
 ENTRYPOINT ["java", "-jar", "YmlKubApp.jar"]
 
