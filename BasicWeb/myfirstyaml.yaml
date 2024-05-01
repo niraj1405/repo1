@@ -22,3 +22,4 @@ spec:
   - protocol: TCP
     port: 80  # External port
     targetPort: 8098  # Port exposed by the Pod container
+  type: NodePort  # Service type
