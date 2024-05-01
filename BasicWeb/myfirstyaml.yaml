@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: basicwebpodforkube
+  name: kubepodlatest
   namespace: nsnew
 spec:
   containers:
-  - name: basicwebpodforkube
-    image: niraj1405/basicweb:1.0.0-2
+  - name: kubekube
+    image: niraj1405/kubeservice:1.0.0-27
     ports:
     - containerPort: 8098  # Port exposed by the Dockerfile
 ---
@@ -17,7 +17,7 @@ metadata:
   namespace: nsnew
 spec:
   selector:
-    run: basicwebpod
+    run: kubepodlatest
   ports:
   - protocol: TCP
     port: 80  # External port
