@@ -4,7 +4,7 @@ metadata:
   name: basicwebpod
 spec:
   containers:
-  - name: basicwebpod
+  - name: basicwebpodforkube
     image: niraj1405/basicweb:1.0.0-2
     ports:
     - containerPort: 8098  # Port exposed by the Dockerfile
