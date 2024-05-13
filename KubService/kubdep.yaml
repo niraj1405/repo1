@@ -9,7 +9,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user-svc-deployment
-  namespace: user-app2
+  namespace: user-app2  # Corrected namespace here
 spec:
   selector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: user-app-container
-          image: 'kubimg:1.0'
+          image: 'niraj1405/kubeservice:1.0.0-37'
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 9191
@@ -33,10 +33,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: userapp-service
-  namespace: user-app2
+  namespace: user-app2  # Corrected namespace here
 spec:
   selector:
-    app: spring-boot-k8s
+    app: spring-boot-k8s  # Updated selector to match deployment labels
   ports:
     - protocol: TCP
       port: 9090
