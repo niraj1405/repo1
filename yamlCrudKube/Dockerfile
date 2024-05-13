@@ -8,8 +8,8 @@ RUN mkdir -p /APP
 WORKDIR /APP
 
 # Copy the JAR file from the relative path into the container's /APP directory
-#COPY yamlCrudKube/target/yamlKube.jar /APP/
-COPY target/yamlKube.jar /APP/
+COPY yamlCrudKube/target/yamlKube.jar /APP/
+#COPY target/yamlKube.jar /APP/
 
 
 # Define the command to run the application
